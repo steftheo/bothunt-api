@@ -3,7 +3,9 @@ var postgresURI = process.env.DATABASE_URL;
 var config = {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "loopback-connector-sqlite",
+    "file_name": "./dev.sqlite3",
+    "debug": false
   }
 }
 

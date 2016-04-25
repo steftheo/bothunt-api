@@ -10,6 +10,8 @@
 *.swp
 *.tgz
 *.xml
+*.sqlite
+*.sqlite3
 .DS_Store
 .idea
 .project
