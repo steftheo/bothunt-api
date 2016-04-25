@@ -1,6 +1,12 @@
 {
   "loopback-component-jsonapi": {
     "exclude": [
+      {
+        "model": "end-user",
+        "methods": [
+          "login"
+        ]
+      }
     ]
   },
   "loopback-component-explorer": {
