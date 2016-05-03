@@ -13,6 +13,10 @@
     "slot-time": {
       "type": "number",
       "default": "20"
+    },
+    "break-time": {
+      "type": "number",
+      "default": "5"
     }
   },
   "validations": [],
