@@ -1,0 +1,27 @@
+{
+  "name": "timeslot",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "start-time": {
+      "type": "date",
+      "required": true
+    },
+    "end-time": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "list-item": {
+      "type": "belongsTo",
+      "model": "list-item",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

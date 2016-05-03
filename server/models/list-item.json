@@ -1,0 +1,33 @@
+{
+  "name": "list-item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "estimate": {
+      "type": "number",
+      "default": "1"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "list": {
+      "type": "belongsTo",
+      "model": "list",
+      "foreignKey": ""
+    },
+    "timeslots": {
+      "type": "hasMany",
+      "model": "timeslot",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
