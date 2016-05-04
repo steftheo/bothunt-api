@@ -21,6 +21,7 @@
     "loopback-component-explorer": "^2.4.0",
     "loopback-component-jsonapi": "^0.19.0",
     "loopback-component-passport": "^2.1.0",
+    "loopback-component-storage": "^1.8.1",
     "loopback-connector-postgresql": "^2.4.1",
     "loopback-connector-sqlite": "^1.4.0",
     "loopback-datasource-juggler": "^2.39.0",
