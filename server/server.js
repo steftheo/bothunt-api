@@ -75,8 +75,7 @@ for (var s in config) {
 var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
 app.get('/auth/account', ensureLoggedIn('/login'), function (req, res, next) {
-  console.log(req.accessToken.id);
-  return res.redirect(`http://localhost:4200?id=${req.accessToken.id}`);
+  return res.redirect(`http://localhost:4200?code=${req.accessToken.id}`);
 });
 
 app.start = function() {

@@ -43,15 +43,7 @@
     "dataSource": "db",
     "public": true
   },
-  "list": {
-    "dataSource": "db",
-    "public": true
-  },
-  "list-item": {
-    "dataSource": "db",
-    "public": true
-  },
-  "timeslot": {
+  "post": {
     "dataSource": "db",
     "public": true
   }
