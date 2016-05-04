@@ -3,6 +3,18 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+var loopbackPassport = require('loopback-component-passport');
+var PassportConfigurator = loopbackPassport.PassportConfigurator;
+var passportConfigurator = new PassportConfigurator(app);
+
+var config = {};
+try {
+  config = require('../providers');
+} catch (err) {
+  console.trace(err);
+  process.exit(1); // fatal
+}
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
@@ -25,3 +37,23 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+app.middleware('session', loopback.session({
+  secret: 'kitty',
+  saveUninitialized: true,
+  resave: true
+}));
+
+passportConfigurator.init();
+
+passportConfigurator.setupModels({
+  userModel: app.models.user,
+  userIdentityModel: app.models.userIdentity,
+  userCredentialModel: app.models.userCredential
+});
+
+for (var s in config) {
+  var c = config[s];
+  c.session = c.session !== false;
+  passportConfigurator.configureProvider(s, c);
+}
