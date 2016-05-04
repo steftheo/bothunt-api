@@ -13,6 +13,6 @@ if (process.env.TWITTER_KEY && process.env.TWITTER_SECRET) {
     failureRedirect: "/login",
     consumerKey: process.env.TWITTER_KEY,
     consumerSecret: process.env.TWITTER_SECRET,
-    failureFlash: true
+    // failureFlash: true
   };
 }

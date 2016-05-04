@@ -11,7 +11,7 @@
       "./mixins"
     ]
   },
-  "User": {
+  "user": {
     "dataSource": "db",
     "public": false
   },
