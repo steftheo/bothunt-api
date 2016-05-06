@@ -1,0 +1,45 @@
+{
+  "name": "bot",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string",
+      "required": true
+    },
+    "websiteUrl": {
+      "type": "string",
+      "required": true
+    },
+    "dateAdded": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "endUser": {
+      "type": "belongsTo",
+      "model": "endUser",
+      "foreignKey": ""
+    },
+    "implementations": {
+      "type": "hasMany",
+      "model": "implementation",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

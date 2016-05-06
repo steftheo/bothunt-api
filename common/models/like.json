@@ -1,0 +1,28 @@
+{
+  "name": "like",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "endUser": {
+      "type": "belongsTo",
+      "model": "endUser",
+      "foreignKey": ""
+    },
+    "bot": {
+      "type": "belongsTo",
+      "model": "bot",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

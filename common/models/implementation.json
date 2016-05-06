@@ -1,0 +1,29 @@
+{
+  "name": "implementation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "installUrl": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bot": {
+      "type": "belongsTo",
+      "model": "bot",
+      "foreignKey": ""
+    },
+    "platform": {
+      "type": "belongsTo",
+      "model": "platform",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

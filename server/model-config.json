@@ -46,5 +46,29 @@
   "container": {
     "dataSource": "storage",
     "public": true
+  },
+  "bot": {
+    "dataSource": "db",
+    "public": true
+  },
+  "endUser": {
+    "dataSource": "db",
+    "public": true
+  },
+  "like": {
+    "dataSource": "db",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "platform": {
+    "dataSource": "db",
+    "public": true
+  },
+  "implementation": {
+    "dataSource": "db",
+    "public": true
   }
 }
