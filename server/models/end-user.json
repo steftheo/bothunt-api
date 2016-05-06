@@ -13,11 +13,6 @@
   },
   "validations": [],
   "relations": {
-    "lists": {
-      "type": "hasMany",
-      "model": "list",
-      "foreignKey": ""
-    }
   },
   "acls": [
     {

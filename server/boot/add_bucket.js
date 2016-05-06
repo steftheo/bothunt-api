@@ -12,7 +12,7 @@ module.exports = function(app) {
     container.createContainer({
       name: `files`,
     }, function(err) {
-      console.log(err);
+
     });
   }
 };

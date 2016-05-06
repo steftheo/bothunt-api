@@ -43,10 +43,6 @@
     "dataSource": "db",
     "public": true
   },
-  "post": {
-    "dataSource": "db",
-    "public": true
-  },
   "container": {
     "dataSource": "storage",
     "public": true
