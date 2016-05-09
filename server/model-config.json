@@ -51,10 +51,6 @@
     "dataSource": "db",
     "public": true
   },
-  "endUser": {
-    "dataSource": "db",
-    "public": true
-  },
   "like": {
     "dataSource": "db",
     "public": true
