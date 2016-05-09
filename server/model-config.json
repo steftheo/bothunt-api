@@ -66,5 +66,13 @@
   "implementation": {
     "dataSource": "db",
     "public": true
+  },
+  "register": {
+    "dataSource": "db",
+    "public": true
+  },
+  "register-user": {
+    "dataSource": "db",
+    "public": true
   }
 }
