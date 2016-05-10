@@ -13,9 +13,9 @@
   },
   "validations": [],
   "relations": {
-    "bot": {
+    "bot-detail": {
       "type": "belongsTo",
-      "model": "bot",
+      "model": "bot-detail",
       "foreignKey": ""
     },
     "platform": {

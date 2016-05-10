@@ -17,9 +17,9 @@
       "model": "endUser",
       "foreignKey": ""
     },
-    "bot": {
+    "bot-detail": {
       "type": "belongsTo",
-      "model": "bot",
+      "model": "bot-detail",
       "foreignKey": ""
     }
   },

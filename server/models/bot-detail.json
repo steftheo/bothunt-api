@@ -1,5 +1,5 @@
 {
-  "name": "bot",
+  "name": "bot-detail",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
