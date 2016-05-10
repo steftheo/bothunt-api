@@ -1,2 +1,2 @@
-module.exports = function(Bot-detail) {
+module.exports = function(Bot) {
 };
