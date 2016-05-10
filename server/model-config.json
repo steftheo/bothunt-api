@@ -66,5 +66,5 @@
   "implementation": {
     "dataSource": "db",
     "public": true
-  },
+  }
 }
