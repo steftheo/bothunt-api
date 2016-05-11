@@ -14,24 +14,23 @@
       "type": "string",
       "required": true
     },
-    "imageUrl": {
+    "image-url": {
       "type": "string",
       "required": true
     },
-    "websiteUrl": {
+    "website-url": {
       "type": "string",
       "required": true
     },
-    "dateAdded": {
-      "type": "date",
-      "required": true
+    "date-added": {
+      "type": "date"
     }
   },
   "validations": [],
   "relations": {
-    "endUser": {
+    "end-user": {
       "type": "belongsTo",
-      "model": "endUser",
+      "model": "end-user",
       "foreignKey": ""
     },
     "implementations": {
