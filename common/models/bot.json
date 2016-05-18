@@ -25,6 +25,9 @@
     "dateAdded": {
       "type": "date",
       "required": true
+    },
+    "logo": {
+      "type": "string"
     }
   },
   "validations": [],
