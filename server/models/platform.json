@@ -13,6 +13,9 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "logo": {
+      "type": "string"
     }
   },
   "validations": [],

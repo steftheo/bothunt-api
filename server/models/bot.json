@@ -24,9 +24,6 @@
     },
     "date-added": {
       "type": "date"
-    },
-    "logo": {
-      "type": "string"
     }
   },
   "validations": [],
