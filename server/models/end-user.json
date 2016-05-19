@@ -24,6 +24,11 @@
       "type": "hasMany",
       "model": "like",
       "foreignKey": ""
+    },
+    "bots": {
+      "type": "hasMany",
+      "model": "bot",
+      "foreignKey": ""
     }
   },
   "acls": [
