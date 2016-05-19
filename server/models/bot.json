@@ -37,6 +37,11 @@
       "type": "hasMany",
       "model": "implementation",
       "foreignKey": ""
+    },
+    "likes": {
+      "type": "hasMany",
+      "model": "like",
+      "foreignKey": ""
     }
   },
   "acls": [],
